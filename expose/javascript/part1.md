@@ -6,6 +6,6 @@
 
 4: The code returns an error (its the same code as from question 3).
 
-5: Line 9 generates an error. This is because the variable "result" is declared with the const keyword and is initialized to 0 in line 5. The value of variables declared with the const keyword cannot be changed after being initialized (remains contant). So, the value of "result" must stay as 0, but in the code we are trying to change its value from 0 to num1 + num2 = 20. This attempt to change its value generates an error.
+5: The code returns an error. This is because the variable "result" is declared with the const keyword and is initialized to 0 in line 5. This means that "result" has a constant reference to the value 0. This reference cannot be changed. However, the code tries to modify the reference of "result" by changing its reference to the value num1 + num2 = 20. This attempt to change its constant reference generates an error.
 
 6: The code returns an error (its the same code as from question 5). 
