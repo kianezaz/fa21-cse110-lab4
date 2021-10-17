@@ -1,0 +1,3 @@
+1: The bug came from using "+" as a string concatentation operator rather than mathematical addition operator. This is because the "+" was being used with two strings (the numbers entered into the HTML page were saved as strings in num1 and num2). So, the variable result ended up being a string concatenation for the input numbers rather than a number caluclated by mathematical addition.
+
+2: You would fix this bug by converting num1 and num2 from a string type to a number type so that they can be operated under mathematical addition. One way to do this is by intializing result to be Number(num1) + Number(num2).
